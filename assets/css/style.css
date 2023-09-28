@@ -1,3 +1,11 @@
+.br-pc {
+  display: inline;
+}
+
+.br-sp {
+  display: none;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -310,6 +318,14 @@ html {
 
 /* レスポンシブ対応 */
 @media screen and (max-width: 767px) {
+  .br-pc {
+    display: none;
+  }
+
+  .br-sp {
+    display: inline;
+  }
+
   .header {
     display: flex;
     flex-direction: column;
@@ -334,6 +350,10 @@ html {
     gap: 10px;
   }
 
+  .about-text-profile {
+    width: 300px;
+  }
+
   .works-wrap {
     flex-direction: column;
     gap: 30px;
@@ -346,8 +366,9 @@ html {
   }
 
   .works-text {
-    width: 250px;
+    width: 300px;
     gap: 10px;
+    text-align: center;
   }
 
   .separater {
@@ -371,5 +392,14 @@ html {
     display: flex;
     flex-direction: column;
     gap: 20px;
+  }
+
+  .skill-item {
+    width: 300px;
+  }
+
+  .contact-text {
+    width: 300px;
+    text-align: center;
   }
 }

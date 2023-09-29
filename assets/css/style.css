@@ -317,7 +317,7 @@ html {
 }
 
 /* レスポンシブ対応 */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 600px) {
   .br-pc {
     display: none;
   }
@@ -333,6 +333,19 @@ html {
     align-items: center;
     gap: 20px;
     font-size: 16px;
+  }
+
+  .header-text {
+    width: 90px;
+    text-align: center;
+  }
+
+  .title-name {
+    font-size: 42px;
+  }
+
+  .about {
+    padding: 60px 20px;
   }
 
   .about-wrap {
@@ -352,6 +365,10 @@ html {
 
   .about-text-profile {
     width: 300px;
+  }
+
+  .works {
+    padding: 60px 20px;
   }
 
   .works-wrap {
@@ -377,6 +394,10 @@ html {
     background-color: #737b8e;
   }
 
+  .skill {
+    padding: 60px 20px;
+  }
+
   .skill-wrap {
     gap: 20px;
     padding-top: 20px;
@@ -396,6 +417,10 @@ html {
 
   .skill-item {
     width: 300px;
+  }
+
+  .contact {
+    padding: 60px 20px;
   }
 
   .contact-text {

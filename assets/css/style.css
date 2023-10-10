@@ -164,7 +164,7 @@ html {
   text-align: center;
   gap: 30px;
   font-family: "Playfair Display";
-  font-size: 14px;
+  font-size: 16px;
   color: #ffffff;
 }
 
@@ -176,7 +176,7 @@ html {
   text-align: center;
   gap: 30px;
   font-family: "Playfair Display", Yu Gothic;
-  font-size: 10px;
+  font-size: 12px;
   letter-spacing: 1px;
   color: #ffffff;
 }

@@ -5,127 +5,213 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/destyle.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src=".//js/toggle.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://kit.fontawesome.com/f81e0fc60b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Arisa Saeki Portfolio</title>
   </head>
   <body>
     <header class="header">
-      <div class="header-menu-first">
-        <a href="#about" class="header-text header-about">ABOUT</a>
-        <a href="#works" class="header-text header-works">WORKS</a>
+      <div class="header-menu-center">
+        <a href="#about" class="header-text">About</a>
+        <a href="#skill" class="header-text">Skill</a>
+        <a href="#works" class="header-text">Works</a>
+        <!-- <a href="#likes" class="header-text">Likes</a> -->
+        <a href="#footer" class="header-text">Contact</a>
       </div>
-      <div class="header-menu-second">
-        <a href="#skill" class="header-text header-skill">SKILL</a>
-        <a href="#contact" class="header-text header-contact">CONTACT</a>
+      <div class="header-menu-right">
+        <!-- <div class="header-language">
+          <a href="" class="header-japanese">JP</a>
+          <a href="" class="header-english">EN</a>
+        </div> -->
+        <div class="header-line-wrap">
+          <span class="header-line header-line-top"></span>
+          <span class="header-line header-line-middle"></span>
+          <span class="header-line header-line-bottom"></span>
+        </div>
       </div>
+      <nav class="header-navigation-wrap">
+        <ul class="header-link-wrap">
+          <li class="header-navigation-link"><a href="#about">About</a></li>
+          <li class="header-navigation-link"><a href="#skill">Skill</a></li>
+          <li class="header-navigation-link"><a href="#works">Works</a></li>
+        </ul>
+        <div class="header-link-wrap-bottom">
+          <p>
+            お問い合わせはinstagramまたは<br
+              class="br-sp"
+            />メールにてお願いいたします。
+          </p>
+          <p>email:arisasaeki.design@gmail.com</p>
+          <a
+            href="https://www.instagram.com/alissauix/?igshid=OGQ5ZDc2ODk2ZA%3D%3D"
+            target="_blank"
+          >
+            <i class="fa-brands fa-instagram" style="color: #f7f8fa"></i
+          ></a>
+        </div>
+      </nav>
     </header>
     <main>
-      <section class="title">
-        <h1 class="title-name">ARISA SAEKI</h1>
-        <h2 class="title-portfolio">PORTFOLIO</h2>
+      <section class="main-title">
+        <div class="main-title-wrap">
+          <h1>Arisa Saeki</h1>
+          <h2>Portfolio</h2>
+        </div>
       </section>
-      <section id="about" class="about">
-        <h2 class="about-title">ABOUT</h2>
-        <div class="about-wrap">
-          <img src="./assets/img/profile.jpg" alt="" class="about-img" />
+      <section class="about">
+        <div id="about" class="about-box">
           <div class="about-text">
-            <p class="about-text-name">Arisa Saeki</p>
-            <p class="about-text-profile">
-              1992年5月生まれ。<br />
-              大学在学時に東南アジア地域研究を<br class="br-sp" />専攻し、<br
-                class="br-pc"
-              />マレーシアにて留学＆<br
-                class="br-sp"
-              />現地出版社で編集者として就職。<br />
-              帰国後、ODAプロジェクトに約4年、<br />環境分野でコンサル業に1年従事。<br />
-              2023年6月～<br class="br-sp" />HTML/CSS/Figmaを学習中。
-            </p>
-            <p class="about-text-info">
-              mail: arisasaeki.design@gmail.com<br />instagram: @alissauix
-            </p>
+            <h3 class="about-title">About</h3>
+            <p class="about-name">Arisa Saeki</p>
+            <div class="about-profile-wrap">
+              <p class="about-profile about-profile-first">
+                大学在学時に東南アジア地域研究を専攻し、<br />マレーシアにて留学＆現地出版社で<br
+                  class="br-sp"
+                />編集者として就職。<br />
+                帰国後、ODAプロジェクトに約4年、<br />環境分野のコンサル業に1年従事。<br />
+              </p>
+              <p class="about-profile about-profile-second">
+                アイデアや思いをどのように可視化することで<br />
+                言語や環境の異なる相手に伝え、<br />プロジェクトを進めるか、<br
+                  class="br-sp"
+                />を考えることが好きです。<br />
+              </p>
+              <p class="about-profile about-profile-third">
+                趣味はひとり旅、美術館巡り、<br
+                  class="br-sp"
+                />街頭演説を聞くこと。<br />
+                自転車とペンギンが好き。
+              </p>
+            </div>
+          </div>
+          <img src=".//assets/img/about-image.JPG" alt="" class="about-image" />
+        </div>
+      </section>
+      <section id="skill" class="skill">
+        <h3 class="skill-title">Skill</h3>
+        <div class="skill-wrap">
+          <div class="skill-content skill-first">
+            <i class="fa-solid fa-code" style="color: #1f485f"></i>
+            <h4>coding</h4>
+            <ul class="list">
+              <li>HTML/CSS/JavaScript</li>
+              <li>2023年9月～WEBクリエイター研修受講</li>
+            </ul>
+          </div>
+          <div class="skill-content skill-second">
+            <i class="fa-solid fa-pencil" style="color: #1f485f"></i>
+            <h4>design</h4>
+            <ul class="list">
+              <li>Figma(ワイヤーフレーム作成等)</li>
+              <li>Photoshop/Illustrater</li>
+            </ul>
+          </div>
+
+          <div class="skill-content skill-third">
+            <i class="fa-solid fa-laptop" style="color: #1f485f"></i>
+            <h4>others</h4>
+            <ul class="list">
+              <li>翻訳（日⇔英）</li>
+              <li>Powerpoint(資料作成)</li>
+            </ul>
           </div>
         </div>
       </section>
       <section id="works" class="works">
-        <h2 class="works-title">WORKS</h2>
+        <h3 class="works-title">works</h3>
         <div class="works-wrap">
-          <a
-            href="https://www.instagram.com/alissauix/?igshid=OGQ5ZDc2ODk2ZA%3D%3D"
-            class=""
-          >
-            <img src="./assets/img/works.jpg" alt="" class="about-img"
-          /></a>
-          <p class="works-text">
-            作成中です。<br />Instagramアカウントをご覧ください
-          </p>
+          <div class="works-item works-first">
+            <img
+              src="./assets/img/works01_squre.png"
+              alt=""
+              class="works-img"
+            />
+            <div class="works-text-wrap">
+              <h4 class="works-text-title">仮想美容室のホームページ</h4>
+              <p class="works-text">
+                研修の最終課題として制作しました。<br />HTML/CSS/JavaScriptを使用しています。
+              </p>
+            </div>
+          </div>
+          <div class="works-item works-second">
+            <img
+              src="./assets/img/works02_squre.png"
+              alt=""
+              class="works-img"
+            />
+            <div class="works-text-wrap">
+              <h4 class="works-text-title">仮想ゲストハウスのホームページ</h4>
+              <p class="works-text">
+                自主制作でワイヤーフレームを作成しました。<br />オリジナルデザインです。<br />Figmaを使用しています。
+              </p>
+            </div>
+          </div>
+          <div class="works-item works-third">
+            <img
+              src="./assets/img/works03_squre.png"
+              alt=""
+              class="works-img"
+            />
+            <div class="works-text-wrap">
+              <h4 class="works-text-title">仮想日記アプリのモックアップ</h4>
+              <p class="works-text">
+                自主制作でアプリ全体のUIデザインと<br />プロトタイプを作成しました。<br />Figmaを使用しています。
+              </p>
+            </div>
+          </div>
         </div>
       </section>
       <section class="separater"></section>
-      <section id="skill" class="skill">
-        <h2 class="skill-title">SKILL</h2>
-        <div class="skill-wrap">
-          <!-- <div class="skill-wrap-first"> -->
-          <ul class="skill-list-1">
-            <h3 class="skill-list-title">HTML/CSS/JavaScript</h3>
-            <li class="skill-item">
-              <p>
-                2023年9月～ WEBクリエイター研修<br
-                  class="br-sp"
-                />(HTML/CSS)オンライン受講
-              </p>
-            </li>
-          </ul>
-          <ul class="skill-list-2">
-            <h3 class="skill-list-title">Figma</h3>
-            <li class="skill-item">
-              <p>2023年6月～ 独学にて習得中。</p>
-            </li>
-          </ul>
-          <!-- </div> -->
-          <!-- <div class="skill-wrap-second"> -->
-          <ul class="skill-list-3">
-            <h3 class="skill-list-title">Microsoft Ofiice</h3>
-            <li class="skill-item">
-              <p>Word…上級(差込印刷、ヘッダーフッター設定等)</p>
-              <p>Excel…上級(関数、ピボットテーブル等用いたデータ集計)</p>
-              <p>Powerpoint…上級(図形/グラフ挿入、アニメーションの作成)</p>
-            </li>
-          </ul>
-          <ul class="skill-list-4">
-            <h3 class="skill-list-title">English</h3>
-            <li class="skill-item">
-              <p>英語検定2級、TOEIC 815点</p>
-              <p>会話/読解…ビジネスレベル</p>
-            </li>
-          </ul>
-          <!-- </div> -->
-        </div>
-      </section>
-      <section id="contact" class="contact">
-        <h2 class="contact-title">CONTACT</h2>
-        <div class="contact-wrap">
-          <p class="contact-text">
-            お問い合わせはinstagram<br
-              class="br-sp"
-            />またはメールにてお願いいたします。
-          </p>
-          <div class="contact-sns-wrap">
-            <a
-              href="https://www.instagram.com/alissauix/?igshid=OGQ5ZDc2ODk2ZA%3D%3D"
-              class="contact-sns-link"
-            >
-              <img src="./assets/img/icon_instagram-orange.svg"
-            /></a>
-            <!-- <a href="" class="contact-sns-link">
-              <img src="./assets/img/icon_facebook-orange.svg"
-            /></a> -->
+      <!-- <section id="likes" class="likes">
+        <h3 class="likes-title">likes</h3>
+        <div class="likes-wrap">
+          <div class="likes-box box-first">
+            <img src="./assets/img/likes01.JPG" alt="" class="likes-img" />
           </div>
-          <p class="contact-adress">arisasaeki.design@gmail.com</p>
+          <div class="likes-box box-second">
+            <img src="./assets/img/likes02.JPG" alt="" class="likes-img" />
+          </div>
+          <div class="likes-box box-third">
+            <img src="./assets/img/likes03.JPG" alt="" class="likes-img" />
+          </div>
+          <div class="likes-box box-forth">
+            <img src="./assets/img/likes04.JPG" alt="" class="likes-img" />
+          </div>
+          <div class="likes-box box-fifth">
+            <img src="./assets/img/likes05.jpg" alt="" class="likes-img" />
+          </div>
         </div>
-      </section>
-      <section class="footer">
-        <p class="footer-text">arisa saeki portfolio</p>
-      </section>
+      </section> -->
     </main>
-    <footer></footer>
+    <footer>
+      <section id="footer" class="footer-wrap">
+        <p class="footer-name">Arisa Saeki</p>
+        <p class="footer-text">
+          お問い合わせはinstagramまたは<br
+            class="br-sp"
+          />メールにてお願いいたします。<br />email: arisasaeki.design@gmail.com
+        </p>
+        <a
+          href="https://www.instagram.com/alissauix/?igshid=OGQ5ZDc2ODk2ZA%3D%3D"
+          target="_blank"
+        >
+          <i class="fa-brands fa-instagram" style="color: #f7f8fa"></i
+        ></a>
+      </section>
+    </footer>
   </body>
 </html>

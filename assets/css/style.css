@@ -536,6 +536,14 @@ footer {
     display: inline;
   }
 
+  .header-link-wrap {
+    font-size: 18px;
+  }
+
+  .header-link-wrap-bottom {
+    font-size: 14px;
+  }
+
   .about-box {
     display: flex;
     flex-direction: column;
